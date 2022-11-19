@@ -25,9 +25,9 @@ along with this program. If not, see <http://www.gnu.org/licenses/>.
   <key_style>flat</key_style>
   <roundrect_radius>0.0</roundrect_radius>
   <key_size>95.0</key_size>
-  <key_fill_gradient>30</key_fill_gradient>
-  <key_stroke_gradient>70</key_stroke_gradient>
-  <key_gradient_direction>-2.0</key_gradient_direction>
-  <key_label_font></key_label_font>
+  <key_stroke_width>0.0</key_stroke_width>
+  <key_label_font>Ubuntu Condensed</key_label_font>
   <key_label_overrides/>
+  <key_shadow_strength>0.0</key_shadow_strength>
+  <key_shadow_size>0.0</key_shadow_size>
 </theme>
