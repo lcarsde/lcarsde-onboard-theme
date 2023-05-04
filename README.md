@@ -1,6 +1,8 @@
 # lcarsde-onboard-theme
 This is a LCARS based theme for the Linux on-screen keyboard Onboard.
 
+The colors are based on [the LCARS Palette that was scanned from a Translite by caseytube]{https://mega.nz/folder/2ognEAJJ#XvL-z1zGYFG4E6zpngPBpw}.
+
 ## Installation
 ### Only you
 1. Copy `LCARS.theme` and `LCARS.colors` into the folder `~/.local/share/onboard/themes`.
