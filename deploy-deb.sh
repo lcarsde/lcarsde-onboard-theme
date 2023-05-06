@@ -10,6 +10,7 @@ echo "preparing debian package build for $1-${CIRCLE_TAG}"
 mkdir -p "build/deb/$1-${CIRCLE_TAG}"
 
 # copy software resources
+cp CHANGELOG "build/deb/$1-${CIRCLE_TAG}/"
 cp LICENSE "build/deb/$1-${CIRCLE_TAG}/"
 cp LCARS.theme "build/deb/$1-${CIRCLE_TAG}/"
 cp LCARS.colors "build/deb/$1-${CIRCLE_TAG}/"

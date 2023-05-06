@@ -20,7 +20,8 @@ install:
 	dh_installdirs
 
 	mkdir -p "debian/lcarsde-onboard-theme/usr/share/onboard/themes"
-	cp -r "LCARS.*" "debian/lcarsde-onboard-theme/usr/share/onboard/themes/"
+	cp -r "LCARS.theme" "debian/lcarsde-onboard-theme/usr/share/onboard/themes/"
+	cp -r "LCARS.colors" "debian/lcarsde-onboard-theme/usr/share/onboard/themes/"
 
 	mkdir -p "debian/lcarsde-onboard-theme/usr/share/doc/lcarsde-onboard-theme"
 	cp "LICENSE" "debian/lcarsde-onboard-theme/usr/share/doc/lcarsde-onboard-theme/copyright"
