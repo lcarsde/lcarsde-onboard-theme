@@ -18,25 +18,25 @@ jobs:
 
       # get deployment files for lcarswm
       - run: git clone ssh://aur@aur.archlinux.org/lcarsde-onboard-theme.git
-      - run: cd lcarswm && git config user.email "$AUR_GIT_EMAIL"
-      - run: cd lcarswm && git config user.name "$AUR_GIT_NAME"
+      - run: cd lcarsde-onboard-theme && git config user.email "$AUR_GIT_EMAIL"
+      - run: cd lcarsde-onboard-theme && git config user.name "$AUR_GIT_NAME"
 
       # log the current contents
-      - run: cat lcarswm/PKGBUILD
-      - run: cat lcarswm/.SRCINFO
+      - run: cat lcarsde-onboard-theme/PKGBUILD
+      - run: cat lcarsde-onboard-theme/.SRCINFO
 
       # update content
-      - run: cd lcarswm && sed -i -e "s/^pkgver=[0-9\.]*$/pkgver=$CIRCLE_TAG/" PKGBUILD
-      - run: cd lcarswm && sed -i -e "s/^pkgrel=[0-9]*$/pkgrel=1/" PKGBUILD
-      - run: cd lcarswm && updpkgsums
-      - run: cd lcarswm && makepkg --printsrcinfo > .SRCINFO
+      - run: cd lcarsde-onboard-theme && sed -i -e "s/^pkgver=[0-9\.]*$/pkgver=$CIRCLE_TAG/" PKGBUILD
+      - run: cd lcarsde-onboard-theme && sed -i -e "s/^pkgrel=[0-9]*$/pkgrel=1/" PKGBUILD
+      - run: cd lcarsde-onboard-theme && updpkgsums
+      - run: cd lcarsde-onboard-theme && makepkg --printsrcinfo > .SRCINFO
 
       # log the new contents
-      - run: cat lcarswm/PKGBUILD
-      - run: cat lcarswm/.SRCINFO
+      - run: cat lcarsde-onboard-theme/PKGBUILD
+      - run: cat lcarsde-onboard-theme/.SRCINFO
 
       # upload new contents
-      - run: cd lcarswm && git add -u && git commit -m "update to version $CIRCLE_TAG" && git push
+      - run: cd lcarsde-onboard-theme && git add -u && git commit -m "update to version $CIRCLE_TAG" && git push
 
   deploy_ubuntu:
     docker:
